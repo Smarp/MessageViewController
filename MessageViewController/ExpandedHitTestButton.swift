@@ -15,4 +15,9 @@ internal final class ExpandedHitTestButton: UIButton {
         return bounds.insetBy(dx: -10, dy: -10).contains(point)
     }
 
+    override func layoutSubviews() {
+           super.layoutSubviews()
+           clipsToBounds = true
+           layer.cornerRadius = frame.width / 2
+       }
 }

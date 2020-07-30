@@ -146,7 +146,7 @@ public final class MessageView: UIView, MessageTextViewListener {
 
     /// - Parameter accessibilityLabel: A custom `accessibilityLabel` to set on the button.
     /// If none is supplied, it will default to the the supplied `title`.
-    public func setButton(title: String, for state: UIControl.State, position: ButtonPosition, accessibilityLabel: String? = nil) {
+    public func setButton(title: String,backgroundColor: UIColor, for state: UIControl.State, position: ButtonPosition, accessibilityLabel: String? = nil) {
         let button: UIButton
         switch position {
         case .left:
@@ -155,6 +155,7 @@ public final class MessageView: UIView, MessageTextViewListener {
             button = rightButton
         }
         button.setTitle(title, for: state)
+        button.backgroundColor = backgroundColor
         button.accessibilityLabel = accessibilityLabel ?? title
         buttonLayoutDidChange(button: button)
     }
@@ -394,3 +395,4 @@ public final class MessageView: UIView, MessageTextViewListener {
     public func willChangeRange(textView: MessageTextView, to range: NSRange) {}
 
 }
+

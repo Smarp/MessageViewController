@@ -28,7 +28,7 @@ class ViewController: MessageViewController, UITableViewDataSource, UITableViewD
         messageView.textViewInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 16)
         messageView.font = UIFont.systemFont(ofSize: 18)
 
-        messageView.setButton(title: "Add", for: .normal, position: .left)
+        messageView.setButton(title: "Add", backgroundColor: UIColor.green, for: .normal, position: .left)
         messageView.addButton(target: self, action: #selector(onLeftButton), position: .left)
         messageView.leftButtonTint = .blue
         messageView.showLeftButton = true
@@ -39,9 +39,9 @@ class ViewController: MessageViewController, UITableViewDataSource, UITableViewD
         messageView.textView.placeholderText = "New message..."
         messageView.textView.placeholderTextColor = .lightGray
 
-        messageView.setButton(title: "Send", for: .normal, position: .right)
+        messageView.setButton(title: "S", backgroundColor: UIColor.green, for: .normal, position: .right)
         messageView.addButton(target: self, action: #selector(onRightButton), position: .right)
-        messageView.rightButtonTint = .blue
+        messageView.rightButtonTint = .white
 
         messageAutocompleteController.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         messageAutocompleteController.tableView.dataSource = self

@@ -25,10 +25,11 @@ public final class CancelView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public func setRightButton(title: String,tintColor: UIColor,action: Selector, for state: UIControl.State) {
+    public func setRightButton(title: String,tintColor: UIColor,action: Selector,font: UIFont, for state: UIControl.State) {
         rightButton.setTitle(title, for: state)
         rightButton.setTitleColor(tintColor, for: .normal)
         rightButton.contentHorizontalAlignment = .right
+        rightButton.titleLabel?.font = font
         rightButton.addTarget(target, action: action, for: .touchUpInside)
         setNeedsLayout()
     }

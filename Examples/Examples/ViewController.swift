@@ -47,9 +47,6 @@ class ViewController: MessageViewController, UITableViewDataSource, UITableViewD
         messageAutocompleteController.tableView.dataSource = self
         messageAutocompleteController.tableView.delegate = self
         messageAutocompleteController.register(prefix: "@")
-        cancelView.setStackView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 44))
-               cancelView.setLeftLabel(title: "Edit comment", textColor: UIColor.red, font: UIFont.systemFont(ofSize: 14.0))
-               cancelView.setRightButton(title: "X Cancel", tintColor: UIColor.red,action: #selector(didTapOnEditCancel), for: .normal)
         // Set custom attributes for an autocompleted string
         let tintColor = UIColor(red: 0, green: 122/255, blue: 1, alpha: 1)
         messageAutocompleteController.registerAutocomplete(prefix: "@", attributes: [
@@ -78,9 +75,7 @@ class ViewController: MessageViewController, UITableViewDataSource, UITableViewD
         )
     }
 
-    @objc func didTapOnEditCancel() {
-         cancelView.isHidden = true
-    }
+  
     // MARK: UITableViewDataSource
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

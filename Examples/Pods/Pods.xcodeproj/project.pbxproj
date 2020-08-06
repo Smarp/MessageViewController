@@ -12,7 +12,8 @@
 		1D126ADF3272AE33BF5B4F1315647BE5 /* NSAttributedString+ReplaceRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BFDF124BFD27E63CA67AA0FB8ACE3 /* NSAttributedString+ReplaceRange.swift */; };
 		262268C1284380A9E84AF9428041BCAE /* UIButton+BottomHeightOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95566A5D572E4E0581DC5BC1A9FC561E /* UIButton+BottomHeightOffset.swift */; };
 		5115F4B683F62D26EA18DFC078693AAB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F5CB976B0A41C034FBF630FA55C63 /* MessageView.swift */; };
-		722C02D724DBF3510087AAE3 /* CancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C02D624DBF3510087AAE3 /* CancelView.swift */; };
+		722C02DC24DC0C770087AAE3 /* CancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C02DB24DC0C770087AAE3 /* CancelView.swift */; };
+		722C02DD24DC0C770087AAE3 /* CancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C02DB24DC0C770087AAE3 /* CancelView.swift */; };
 		7DD3E2D0931252A81E8DCFC78E4DA12C /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7F1130D6FEE34F0620BD2B3FF12A23 /* MessageTextView.swift */; };
 		828841AE00B7D262C339876D394CFAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		852FBF6F7F691F08F87AB9DE8A853702 /* UIView+iOS11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E3F4A0F8BD036C2D04745C11412365 /* UIView+iOS11.swift */; };
@@ -56,7 +57,7 @@
 		6F205B9FF6F93EA0D354E2694C725ECC /* Pods-Examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Examples.debug.xcconfig"; sourceTree = "<group>"; };
 		714F5CB976B0A41C034FBF630FA55C63 /* MessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = MessageViewController/MessageView.swift; sourceTree = "<group>"; };
 		715F823A05067B88BA9D209804538147 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		722C02D624DBF3510087AAE3 /* CancelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelView.swift; sourceTree = "<group>"; };
+		722C02DB24DC0C770087AAE3 /* CancelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CancelView.swift; path = MessageViewController/CancelView.swift; sourceTree = "<group>"; };
 		772980BC17F1C6AC53C2C41E78D22961 /* UIScrollView+StopScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+StopScrolling.swift"; path = "MessageViewController/UIScrollView+StopScrolling.swift"; sourceTree = "<group>"; };
 		7B879CE37059C5975D14EEA66809D24D /* MessageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageViewController.debug.xcconfig; sourceTree = "<group>"; };
 		86A75B2EFAA9F98743E33A8F9CB6D57A /* MessageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +170,7 @@
 		C97A1EEA8DE7C423B2AB306425C502AB /* MessageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				722C02DB24DC0C770087AAE3 /* CancelView.swift */,
 				45C6F77430D504629F84EB38B8800965 /* ExpandedHitTestButton.swift */,
 				B2FE7BBD8A0C7F1758C92B17E5D82CCF /* MessageAutocompleteController.swift */,
 				5C7F1130D6FEE34F0620BD2B3FF12A23 /* MessageTextView.swift */,
@@ -182,7 +184,6 @@
 				772980BC17F1C6AC53C2C41E78D22961 /* UIScrollView+StopScrolling.swift */,
 				00B5EF542FA0DFE46C1E059937686EF2 /* UITextView+Prefixes.swift */,
 				99E3F4A0F8BD036C2D04745C11412365 /* UIView+iOS11.swift */,
-				722C02D624DBF3510087AAE3 /* CancelView.swift */,
 				893F83ED10AADE36B4BDCA8B0101B949 /* Pod */,
 				43ECB1A886DEDC5FDB28DEAC59E17967 /* Support Files */,
 			);
@@ -284,6 +285,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					798D7038185779650724117C84AA91DB = {
+						LastSwiftMigration = 1160;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -330,7 +336,6 @@
 				F85989999F04FD00B79683BA7952D165 /* MessageAutocompleteController.swift in Sources */,
 				7DD3E2D0931252A81E8DCFC78E4DA12C /* MessageTextView.swift in Sources */,
 				5115F4B683F62D26EA18DFC078693AAB /* MessageView.swift in Sources */,
-				722C02D724DBF3510087AAE3 /* CancelView.swift in Sources */,
 				982770614E7D7DBA8BA5FE8352D74135 /* MessageViewController+MessageViewDelegate.swift in Sources */,
 				A7EA593ECED20A94C788C0AECD8B3D69 /* MessageViewController-dummy.m in Sources */,
 				B9D7699C43E7F9EAF9F8D4D0D2F6BB74 /* MessageViewController.swift in Sources */,
@@ -338,6 +343,7 @@
 				1D126ADF3272AE33BF5B4F1315647BE5 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				A994D5627CF2D6382AA491DE7C9D5BF0 /* String+WordAtRange.swift in Sources */,
 				262268C1284380A9E84AF9428041BCAE /* UIButton+BottomHeightOffset.swift in Sources */,
+				722C02DC24DC0C770087AAE3 /* CancelView.swift in Sources */,
 				9636C230AB3BF35E5900493E5493193E /* UIScrollView+StopScrolling.swift in Sources */,
 				E978D9DBE34B9255996500617B38F5CB /* UITextView+Prefixes.swift in Sources */,
 				852FBF6F7F691F08F87AB9DE8A853702 /* UIView+iOS11.swift in Sources */,
@@ -348,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722C02DD24DC0C770087AAE3 /* CancelView.swift in Sources */,
 				87C416BECE0386590D8CF5C74E9E9E1A /* Pods-Examples-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +469,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -485,6 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -498,6 +507,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -521,6 +531,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

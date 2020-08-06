@@ -23,7 +23,7 @@ public final class MessageView: UIView, MessageTextViewListener {
     internal var rightButtonInset: CGFloat = 0
     internal var ignoreLineHeight = false
     internal var suppressKVO = false
-    
+
     public enum ButtonPosition {
         case left
         case right
@@ -220,7 +220,7 @@ public final class MessageView: UIView, MessageTextViewListener {
             button = rightButton
             rightButtonAction = action
         }
-        
+
         button.addTarget(target, action: action, for: .touchUpInside)
     }
 
@@ -323,7 +323,6 @@ public final class MessageView: UIView, MessageTextViewListener {
             height: rightButtonSize.height
         )
         rightButton.frame = rightButtonFrame
-
         contentView?.frame = CGRect(
             x: safeBounds.minX,
             y: textViewFrame.maxY,

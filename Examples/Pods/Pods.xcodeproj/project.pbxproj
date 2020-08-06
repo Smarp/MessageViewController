@@ -12,6 +12,7 @@
 		1D126ADF3272AE33BF5B4F1315647BE5 /* NSAttributedString+ReplaceRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BFDF124BFD27E63CA67AA0FB8ACE3 /* NSAttributedString+ReplaceRange.swift */; };
 		262268C1284380A9E84AF9428041BCAE /* UIButton+BottomHeightOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95566A5D572E4E0581DC5BC1A9FC561E /* UIButton+BottomHeightOffset.swift */; };
 		5115F4B683F62D26EA18DFC078693AAB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F5CB976B0A41C034FBF630FA55C63 /* MessageView.swift */; };
+		722C02D724DBF3510087AAE3 /* CancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C02D624DBF3510087AAE3 /* CancelView.swift */; };
 		7DD3E2D0931252A81E8DCFC78E4DA12C /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7F1130D6FEE34F0620BD2B3FF12A23 /* MessageTextView.swift */; };
 		828841AE00B7D262C339876D394CFAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		852FBF6F7F691F08F87AB9DE8A853702 /* UIView+iOS11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E3F4A0F8BD036C2D04745C11412365 /* UIView+iOS11.swift */; };
@@ -48,23 +49,24 @@
 		3F7BFDF124BFD27E63CA67AA0FB8ACE3 /* NSAttributedString+ReplaceRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+ReplaceRange.swift"; path = "MessageViewController/NSAttributedString+ReplaceRange.swift"; sourceTree = "<group>"; };
 		45C6F77430D504629F84EB38B8800965 /* ExpandedHitTestButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandedHitTestButton.swift; path = MessageViewController/ExpandedHitTestButton.swift; sourceTree = "<group>"; };
 		4F684F84EF78184D8CDC29F45AE1B603 /* Pods-Examples-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Examples-Info.plist"; sourceTree = "<group>"; };
-		539B8D244BDF8C118B30EF9E8CC8E0DC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		539B8D244BDF8C118B30EF9E8CC8E0DC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5B846A8A89655E8CBA0EA9C632B50D8C /* MessageViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageViewController.release.xcconfig; sourceTree = "<group>"; };
 		5C7F1130D6FEE34F0620BD2B3FF12A23 /* MessageTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageTextView.swift; path = MessageViewController/MessageTextView.swift; sourceTree = "<group>"; };
-		6D3FA33452BE3D78CBF8F21BECCBE04C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6D3FA33452BE3D78CBF8F21BECCBE04C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6F205B9FF6F93EA0D354E2694C725ECC /* Pods-Examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Examples.debug.xcconfig"; sourceTree = "<group>"; };
 		714F5CB976B0A41C034FBF630FA55C63 /* MessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = MessageViewController/MessageView.swift; sourceTree = "<group>"; };
-		715F823A05067B88BA9D209804538147 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Examples.framework; path = "Pods-Examples.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		715F823A05067B88BA9D209804538147 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		722C02D624DBF3510087AAE3 /* CancelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelView.swift; sourceTree = "<group>"; };
 		772980BC17F1C6AC53C2C41E78D22961 /* UIScrollView+StopScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+StopScrolling.swift"; path = "MessageViewController/UIScrollView+StopScrolling.swift"; sourceTree = "<group>"; };
 		7B879CE37059C5975D14EEA66809D24D /* MessageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageViewController.debug.xcconfig; sourceTree = "<group>"; };
-		86A75B2EFAA9F98743E33A8F9CB6D57A /* MessageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MessageViewController.framework; path = MessageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A75B2EFAA9F98743E33A8F9CB6D57A /* MessageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		888CA4AD183AEBCEABE957A7E7755133 /* MessageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageViewController-umbrella.h"; sourceTree = "<group>"; };
 		88DDD0D77353B71225D55E9F4E38D9F5 /* Pods-Examples-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Examples-frameworks.sh"; sourceTree = "<group>"; };
 		94DA82AD3FE736B6E4C02005D8E5E380 /* Pods-Examples-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Examples-dummy.m"; sourceTree = "<group>"; };
 		95566A5D572E4E0581DC5BC1A9FC561E /* UIButton+BottomHeightOffset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+BottomHeightOffset.swift"; path = "MessageViewController/UIButton+BottomHeightOffset.swift"; sourceTree = "<group>"; };
 		99E3F4A0F8BD036C2D04745C11412365 /* UIView+iOS11.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+iOS11.swift"; path = "MessageViewController/UIView+iOS11.swift"; sourceTree = "<group>"; };
-		9AE42649E1A06F6D9ACF7F2CDCA8D8A6 /* MessageViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MessageViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AE42649E1A06F6D9ACF7F2CDCA8D8A6 /* MessageViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MessageViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A04933B59EC517A9FAE1A08F5922E4C5 /* String+WordAtRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+WordAtRange.swift"; path = "MessageViewController/String+WordAtRange.swift"; sourceTree = "<group>"; };
 		A6F08D23C957DA16D8ECF36E4B17457B /* MessageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MessageViewController.modulemap; sourceTree = "<group>"; };
 		A7AEEAB116FE0758D11D23FE64EE09EE /* Pods-Examples-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Examples-umbrella.h"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				772980BC17F1C6AC53C2C41E78D22961 /* UIScrollView+StopScrolling.swift */,
 				00B5EF542FA0DFE46C1E059937686EF2 /* UITextView+Prefixes.swift */,
 				99E3F4A0F8BD036C2D04745C11412365 /* UIView+iOS11.swift */,
+				722C02D624DBF3510087AAE3 /* CancelView.swift */,
 				893F83ED10AADE36B4BDCA8B0101B949 /* Pod */,
 				43ECB1A886DEDC5FDB28DEAC59E17967 /* Support Files */,
 			);
@@ -327,6 +330,7 @@
 				F85989999F04FD00B79683BA7952D165 /* MessageAutocompleteController.swift in Sources */,
 				7DD3E2D0931252A81E8DCFC78E4DA12C /* MessageTextView.swift in Sources */,
 				5115F4B683F62D26EA18DFC078693AAB /* MessageView.swift in Sources */,
+				722C02D724DBF3510087AAE3 /* CancelView.swift in Sources */,
 				982770614E7D7DBA8BA5FE8352D74135 /* MessageViewController+MessageViewDelegate.swift in Sources */,
 				A7EA593ECED20A94C788C0AECD8B3D69 /* MessageViewController-dummy.m in Sources */,
 				B9D7699C43E7F9EAF9F8D4D0D2F6BB74 /* MessageViewController.swift in Sources */,
@@ -446,8 +450,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

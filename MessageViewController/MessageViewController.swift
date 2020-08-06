@@ -11,6 +11,8 @@ import UIKit
 open class MessageViewController: UIViewController, MessageAutocompleteControllerLayoutDelegate {
 
     public let messageView = MessageView()
+    public let cancelView = CancelView()
+
     public private(set) lazy var messageAutocompleteController: MessageAutocompleteController = {
         return MessageAutocompleteController(textView: self.messageView.textView)
     }()
@@ -34,6 +36,7 @@ open class MessageViewController: UIViewController, MessageAutocompleteControlle
     open override func viewDidLoad() {
         super.viewDidLoad()
         messageView.text = cachedText ?? ""
+       cancelView.backgroundColor = UIColor.groupTableViewBackground
     }
 
     open override func viewWillDisappear(_ animated: Bool) {
@@ -52,8 +55,9 @@ open class MessageViewController: UIViewController, MessageAutocompleteControlle
         }
         scrollView.panGestureRecognizer.addTarget(self, action: #selector(onPan(gesture:)))
         scrollView.keyboardDismissMode = .none
-
+        view.addSubview(cancelView)
         view.addSubview(messageView)
+        cancelView.isHidden = true
     }
 
     public var borderColor: UIColor? {
@@ -112,6 +116,7 @@ open class MessageViewController: UIViewController, MessageAutocompleteControlle
         let bounds = view.bounds
 
         let safeAreaAdditionalHeight = self.safeAreaAdditionalHeight
+
         let messageViewHeight = messageView.height + safeAreaAdditionalHeight
         let hiddenHeight = isMessageViewHidden ? messageViewHeight : 0
 
@@ -121,11 +126,20 @@ open class MessageViewController: UIViewController, MessageAutocompleteControlle
             width: bounds.width,
             height: messageViewHeight
         )
-        messageView.frame = messageViewFrame
 
+
+
+        let cancelViewFrame = CGRect(
+                   x: bounds.minX,
+                   y: bounds.minY + bounds.height - (messageViewHeight + 44) - keyboardHeight ,
+                   width: bounds.width,
+                   height: 44
+               )
+        messageView.frame = messageViewFrame
+        cancelView.frame = cancelViewFrame
         // required for the nested UITextView to layout its internals correctly
         messageView.layoutIfNeeded()
-
+        cancelView.layoutIfNeeded()
         let originalOffset = scrollView.contentOffset
         let heightChange = scrollView.frame.height - messageViewFrame.minY
 
@@ -247,3 +261,5 @@ open class MessageViewController: UIViewController, MessageAutocompleteControlle
     }
 
 }
+
+

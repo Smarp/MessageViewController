@@ -44,7 +44,7 @@ public final class CancelView: UIView {
     public func setStackView(frame: CGRect) {
         stackView.frame = frame
         stackView.backgroundColor = UIColor.green
-        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         stackView.distribution  = .fill
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.addArrangedSubview(leftLabel)

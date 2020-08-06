@@ -25,11 +25,11 @@ public final class CancelView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public func setRightButton(title: String,tintColor: UIColor, for state: UIControl.State) {
+    public func setRightButton(title: String,tintColor: UIColor,action: Selector, for state: UIControl.State) {
         rightButton.setTitle(title, for: state)
         rightButton.setTitleColor(tintColor, for: .normal)
         rightButton.contentHorizontalAlignment = .right
-        rightButton.addTarget(self, action: #selector(didTapOnEditCancel(_:)), for: .touchUpInside)
+        rightButton.addTarget(target, action: action, for: .touchUpInside)
         setNeedsLayout()
     }
 
@@ -51,8 +51,6 @@ public final class CancelView: UIView {
         setNeedsLayout()
     }
 
-    @objc func didTapOnEditCancel(_ sender: Any) {
-        self.isHidden = true
-    }
+  
 
 }
